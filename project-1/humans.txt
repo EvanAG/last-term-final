@@ -1,0 +1,20 @@
+/* TEAM */
+
+Designer & Developer: Evan Grice
+Site: http://evangrice.ca
+Twitter: @evgrice
+LOcation: Ottawa, Canada
+
+
+
+/* THANKS */
+
+
+Thanks to all the people who make the interwebz.
+
+
+/* SITE */
+Last Update: 2013/11/15
+Standards: HTML5, CSS3
+Components: Modernizer, Jquery, etc...
+Software: Adobe, Livereload, Sublime Text 2

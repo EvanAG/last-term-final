@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* CSS Document */
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+
+html {
+	-moz-text-size-adjust: 100%;	
+	-ms-text-size-adjust: 100%;	
+	-webkit-text-size-adjust: 100%;	
+	-o-text-size-adjust: 100%;	
+	text-size-adjust: 100%;	
+}
+
+html, body{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight:400;
+	color: #a7a9ab;
+	font-size: 12pt;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000;
+}
+
+section {
+	margin: 5rem 0 3rem;
+}
+
+ 
+.ease-all {
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+	
+
+}
+ 
+.copyright{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+h2 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight:700;
+	text-transform: uppercase;
+	color: #a7a9ab;
+}
+
+
+.main {
+	width: 90%;
+	padding: 3%;
+}
+
+img{
+	width: 100%;
+}
+
+/* --------------------------------- Navigation Styles */
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 10px;	
+	right: 5%;
+	
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+	
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+	background-color: #ccc;
+}
+
+.nav-btn[data-state="active"] {
+	background: #ccc url('../images/nav-close.svg') no-repeat center center;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #000;
+	border-top: 5px solid #fff;
+}
+
+.logo{
+	max-width: 80px;
+	margin: 1rem auto;
+}
+	 
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	display: block;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 10px;	
+	right: 5%;
+	
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background-color: #ccc;
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	text-align:center;
+	color: #a7a9ab;;
+	text-transform: uppercase;
+	border-top: 1px solid #CCC;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+	background-color: #333;
+}
+
+	/* ------------------------------------ Toggle Nav*/
+
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+	
+	@media only screen and (min-width: 25em) {
+	.nav-bottom	{
+		display: none;
+	}
+
+	.copyright{
+		display: none;
+	}
+
+	.nav{
+		overflow: auto;	
+	}
+	
+	.nav li{
+		float: right;
+	}
+	
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: block;
+	}	
+}
+
+@media only screen and (min-width: 35em) {
+
+	.nav{
+		text-align: right;
+	}
+	
+	.nav li{
+		display: inline-block;
+		float: none;
+		margin: 0;
+		width: auto;	
+	}
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		border-top: 0;
+	}
+	
+	
+	.logo {
+		float: left;
+		width: auto;
+		margin-left: 5%;
+	}
+
+	header {
+		overflow :auto;
+	}
+}
+
+   /* ------------------------------------- Home */
+
+h1 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight:700;
+	text-align: center;
+	font-size: 30pt;
+	text-transform: uppercase;
+	border-bottom: 1px solid #4eb4e6;
+}
+
+.frs h2, p {
+	text-align: center;
+	margin: 1rem;
+}
+
+.frs h2{
+	margin-top: 2rem;
+}
+
+.buckets{
+	overflow: auto;
+}
+
+.buckets li{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 5%;
+	margin-bottom:5%;
+	text-align: center;
+}
+
+@media only screen and (min-width: 35em){
+	.buckets li{
+		width: 25%;
+		margin: 2.5%;
+		float: left;
+	}
+
+	.frs p {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+
+@media only screen and (min-width: 55em){
+
+	.frs p {
+		padding-right:20%;
+		padding-left: 20%;
+	}
+}
+
+	/* ------------------------------ Models */
+
+.lal h2 {
+	text-align: center;
+}	
+
+.models{
+	overflow: auto;
+}
+
+.models li{
+	width: 80%;
+	margin-top: 1%;
+	margin-bottom: 2.5%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (min-width: 35em){
+	.models li{
+		float: left;
+		width: 33.33%;
+	}
+}
+
+@media only screen and (min-width: 55em){
+	.models li{
+		float: left;
+		width: 20%;
+	}
+} 
+
+/* ------------------------------ About */
+
+.news {
+	text-align:center;
+	margin: 2.5%;
+}
+
+.news h2 {
+	margin-top: 5%;
+}
+
+@media only screen and (min-width: 35em){
+
+	.news p {
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+}
+
+@media only screen and (min-width: 55em){
+
+	.news p {
+		padding-right:20%;
+		padding-left: 20%;
+	}
+}
+
+/* ------------------------------ Dealers */
+
+.dealer {
+	text-align: center;
+}
+
+/* --------------------------- Social Icons */
+
+.social li {
+	text-align: center;
+}
+
+.contact {
+	padding-top: 3%;
+	border-top: solid 1px #4eb4e6;
+	text-align: center;
+}
+
+.footer {
+	background-color: #FFF;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.social li a,
+.social li a:link,
+.socail li a:visited{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 1rem;
+	text-align: center;
+	padding-top: 0.8125rem;
+	color: #FFF;
+
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+
+	color: #000;
+
+	-webkit-box-shadow: inset 0px 0px 0px 40px #FFF;
+	-moz-box-shadow: inset 0px 0px 0px 40px #FFF;
+	-ms-box-shadow: inset 0px 0px 0px 40px #FFF;
+	-o-box-shadow: inset 0px 0px 0px 40px #FFF;
+	box-shadow: inset 0px 0px 0px 40px #FFF;
+}
+
+.social li a:hover,
+.social li a:focus,
+.social li a:active{
+	-webkit-box-shadow: inset 0px 0px 0px 3px #FFF;
+	-moz-box-shadow: inset 0px 0px 0px 3px #FFF;
+	-ms-box-shadow: inset 0px 0px 0px 3px #FFF;
+	-o-box-shadow: inset 0px 0px 0px 3px #FFF;
+	box-shadow: inset 0px 0px 0px 3px #FFF;
+	color: #FFF;
+}
+
+

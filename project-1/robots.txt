@@ -1,0 +1,9 @@
+# http://en.wikipedia.org/wiki/Robots_exclusive_standard
+# http://www.robotstext.org
+
+Sitemap: http://gric0010.site44.com/dsn1543/project-1/sitemap.xml/
+
+User-agent: *
+Disallow: /*/
+Disallow: /tmp/
+Disallow: /assets/
